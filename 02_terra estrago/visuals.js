@@ -5,11 +5,13 @@ const DJ_DIR = "file:///home/bernardo/Documents/Visuals/2025_02_06 - Stranger Bi
 s0.initVideo(DJ_DIR + "symmetry-base.mp4")
 s1.initVideo(DJ_DIR + "symmetry-ascii.mp4")
 // Só execute uma vez!!!!!
+//        TERRA ESTRAGO/
+// visuals for this performance created previously by berin
+//livecoding made in hydra, check it out in your browser at https://hydra.ojack.xyz/
 
 src(s0).out(o0)
 
-
-src(s1).out(o1)
+src(s0).contrast(()=>a.fft[3]*.1+1).saturate(()=>a.fft[3]*1+2).out(o3)
 
 render(o0)
 
